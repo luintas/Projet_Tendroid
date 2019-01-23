@@ -21,9 +21,9 @@ public class Grid{
     public PositionList allPositon(){
         PositionList allpos = new PositionList();
         int i,j;
-        for(i=0,i<nbCol,i++){
-            for(j=0,j<nbLig,j++){
-                allpos.add(int i, int j);
+        for(i=0;i<nbCol;i++){
+            for(j=0;j<nbLig;j++){
+                allpos.add(i,j);
             }
         }
         return allpos;
@@ -57,17 +57,22 @@ public class Grid{
 
     public PositionList adjPosition(Position p){
         PositionList adjpos = new PositionList();
-        if(regularPosition(tab[p.getCol()+1][p.getLig()])){
-            adjpos.add(tab[p.getCol()+1][p.getLig()])
+        Position p1 = new Position(p.getCol()+1, p.getLig());
+        if(regularPosition(p1)){
+            adjpos.add(p1);
         }
-        if(regularPosition(tab[p.getCol()-1][p.getLig()])){
-            adjpos.add(tab[p.getCol()-1][p.getLig()])
+        p1 = new Position(p.getCol()-1, p.getLig());
+        if(regularPosition(p1)){
+            adjpos.add(p1);
         }
-        if(regularPosition(tab[p.getCol()][p.getLig()+1])){
-            adjpos.add(tab[p.getCol()][p.getLig()+1])
+        p1 = new Position(p.getCol(), p.getLig()+1);
+        if(regularPosition(p1)){
+            adjpos.add(p1);
         }
-        if(regularPosition(tab[p.getCol()][p.getLig()-1])){
-            adjpos.add(tab[p.getCol()][p.getLig()-1])
+        p1 = new Position(p.getCol(), p.getLig()-1);
+        if(regularPosition(p1)){
+            adjpos.add(p1);
         }
+        return adjpos;
     }
 }
