@@ -2,12 +2,12 @@ import java.util.ArrayList;
 
 public class PositionList extends ArrayList<Position>{
 
-    public ArrayList<Position> tab;
-
-    
+    public PositionList(){
+        super();
+    }
     public boolean add(int col,int lig){
         Position p = new Position(col, lig);
-        tab.add(p);
+        this.add(p);
         return true;
     }
     public boolean contains(Position p){
@@ -17,5 +17,8 @@ public class PositionList extends ArrayList<Position>{
             }
         }
         return false;
+    }
+    public static void main(String[] args) {
+        
     }
 }
