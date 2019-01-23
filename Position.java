@@ -17,7 +17,11 @@ public class Position{
     public int getLig() {
         return lig;
     }
-    @Override
+    public boolean equals(Position p){
+        if((this.col==p.col)&&(this.lig==p.lig))
+                return true;
+        return false;
+    }
     public boolean equals(Object obj) {
         if(this==obj)
             return true;
