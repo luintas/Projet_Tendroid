@@ -20,11 +20,10 @@ public class TenGrid extends Grid{
         }
         groupe.add(new Position(p.getCol(),p.getLig()));
         int i=0;
-        while(adjPosition(p).get(i)!=null){
-            if(tab[adjPosition(p).get(i).getCol()][adjPosition(p).get(i).getLig()]==tab[p.getCol()][p.getLig()]){
-                getGroupRec(adjPosition(p).get(i),groupe);
-            }
-            i++;
+        PositionList pl=adjPosition(p);
+        for(Position p2 :pl){
+            if(this.get(p)==this.get(p2))
+                getGroupRec(p2,groupe);
         }
         return groupe;
     }
@@ -66,17 +65,16 @@ public class TenGrid extends Grid{
                 }
             }
         }*/
+        int i, j, k;
         for(i=0;i<5;i++){
             for(j=4;j>=0;j--){
-                if(tab[i][j]){
-                    k=1;
-                    while(tab[i][j-k]==null && j-k>=0){
-                        k++;
-                    }
-                    if(tab[i][j-1]!=null && j-k>-1){
-                        set(new Position(i,j+k-1),tab[i][j];
-                        unset(new Position(i,j);
-                    }
+                k=1;
+                while(j-k>=0 && tab[i][j-k]==null){
+                    k++;
+                }
+                if(j-k>-1 && tab[i][j-1]!=null){
+                    set(new Position(i,j+k-1),tab[i][j]);
+                    unset(new Position(i,j));
                 }
             }
         }
@@ -99,10 +97,11 @@ public class TenGrid extends Grid{
         Integer[] ns = new Integer[52];
         System.out.println((new TenGrid(ns)).nbCol == 5);
         System.out.println((new TenGrid(ns)).nbLig == 5);
-        int i;
+        
+		/*int i;
         for(i=0;i<25;i++){
         System.out.println((new TenGrid(ns)).get(new Position(i%5,i/5)) == ns[i]);
         System.out.println((new TenGrid(ns)).get(p) == ns[p.nbLig()*5+p.nbCol()]);
-        }
+        }*/
     }
 }
