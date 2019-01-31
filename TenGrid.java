@@ -57,13 +57,14 @@ public class TenGrid extends Grid{
         for(i=0;i<5;i++){
             for(j=4;j>=0;j--){
                 if(tab[i][j]==null){
-                k=1;
-                while(tab[i][j-k]==null && j-k>=0){
-                    k++;
-                }
-                if(j-k>=0){
-                    set(new Position(i,j),tab[i][j-k];
-                    unset(new Position(i,j-k);
+                    k=1;
+                    while(tab[i][j-k]==null && j-k>=0){
+                        k++;
+                    }
+                    if(j-k>=0){
+                        set(new Position(i,j),tab[i][j-k];
+                        unset(new Position(i,j-k);
+                    }
                 }
             }
         }
