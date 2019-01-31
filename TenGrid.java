@@ -54,42 +54,19 @@ public class TenGrid extends Grid{
         }
     }
     public void pack(){
-        /*for(i=0;i<5;i++){
-            for(j=0;j<5;j++){
-                if(tab[i][j]==null){
-                    k=0
-                    while(tab[i][j-k]==null && j-k>=0){
-                        
-                        k++;
-                        
-                    }
-                }
-            }
-        }*/
         for(i=0;i<5;i++){
             for(j=4;j>=0;j--){
+                if(tab[i][j]==null){
                 k=1;
                 while(tab[i][j-k]==null && j-k>=0){
                     k++;
                 }
-                if(tab[i][j-1]!=null && j-k>-1){
-                    set(new Position(i,j+k-1),tab[i][j];
-                    unset(new Position(i,j);
+                if(j-k>=0){
+                    set(new Position(i,j),tab[i][j-k];
+                    unset(new Position(i,j-k);
                 }
             }
         }
-        /*
-        PositionList intermediaire = new PositionList();
-        intermediaire = emptyPositions();
-        while(intermediaire.get(i)!=null){
-            int i = intermediaire.get(i).getLig();
-        while(i<5){
-                if(tab[intermediaire.get(i).getLig()+1][intermediaire.get(i).getCol()]!=null){
-                    
-                }
-
-            }
-        }*/
     }
     public static void main(String[] args){
         System.out.println((new TenGrid()).nbCol == 5);
