@@ -54,16 +54,17 @@ public class TenGrid extends Grid{
         }
     }
     public void pack(){
+        int i,j,k;
         for(i=0;i<5;i++){
             for(j=4;j>=0;j--){
                 if(tab[i][j]==null){
                     k=1;
-                    while(tab[i][j-k]==null && j-k>=0){
+                    while(j-k>=0 && tab[i][j-k]==null){
                         k++;
                     }
                     if(j-k>=0){
-                        set(new Position(i,j),tab[i][j-k];
-                        unset(new Position(i,j-k);
+                        set(new Position(i,j),tab[i][j-k]);
+                        unset(new Position(i,j-k));
                     }
                 }
             }
