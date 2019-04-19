@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout2"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="50dp"
+        android:gravity="top|center"
+    >
+
+    <com.example.a3673605.myapplication.GameBoard
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:id="@+id/boardSurface"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Score : 0"
+        android:id="@+id/Score1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="quitter"
+            android:src="@mipmap/ic_action_exit" />
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="reset"
+            android:src="@mipmap/ic_action_reload"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#FFFFFF"
+    android:id="@+id/layout1">
+
+
+    <Button
+        android:id="@+id/buttonnewgame"
+        android:layout_width="280dp"
+        android:layout_height="120dp"
+        android:background="@drawable/button_shape"
+        android:onClick="afficheLePlateau"
+
+        android:text="Nouvelle partie"
+        android:textColor="#FFFFFF"
+
+        android:textSize="20dp"
+        android:layout_marginBottom="15dp"/>
+
+
+    <Button
+        android:id="@+id/buttoncontinu"
+        android:layout_width="280dp"
+        android:layout_height="120dp"
+        android:background="@drawable/button_shape3"
+        android:onClick="affichecontinu"
+        android:text="Continuer"
+        android:textColor="#FFFFFF"
+
+        android:textSize="20dp"
+        android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/buttonchrono"
+            android:textColor="#FFFFFF"
+            android:layout_width="280dp"
+            android:layout_height="120dp"
+            android:background="@drawable/button_shape2"
+            android:onClick="afficheTimeLimit"
+            android:text="Mode chrono"
+            android:textSize="20dp"
+            android:layout_marginBottom="15dp"/>
+            <!--android:src="@mipmap/ic_action_playback_play_white"-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout2"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="afficherPref"
+            android:src="@mipmap/ic_action_settings" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="afficherLesScores"
+            android:src="@mipmap/ic_action_achievement" />
+
+
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="quitter"
+            android:src="@mipmap/ic_action_exit" />
+
+    </LinearLayout>
+
+</LinearLayout>

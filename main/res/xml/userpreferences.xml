@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Une Catégorie -->
+    <PreferenceCategory android:title="coucou">
+        <SeekBarPreference
+            android:key="terne"
+            android:title="alpha"
+            android:summary="alpha"
+            android:max="255"
+            android:defaultValue="125" />
+        <ListPreference
+            android:key="PREF_LIST"
+            android:title="@string/tempslimite"
+            android:entries="@array/listentries"
+            android:entryValues="@array/listvalues" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="modesombre"
+            android:title="@string/darkmode"/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="modeexperimentale"
+            android:title="@string/Modeexperimentale"/>
+
+        <!-- Une Catégorie -->
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="coucou">
+
+        <Preference android:title="coucou"
+            android:key="score_button"
+            android:summary="coucou"/>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

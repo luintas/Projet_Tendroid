@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Just Get10</string>
+    <string name="play">Play</string>
+    <string name="reset">Reset</string>
+    <string name="Pref">Preferences</string>
+    <string name="darkmode">Darkmode</string>
+    <string name="color">Color</string>
+    <string name="phrasewin">You Win !</string>
+    <string name="phraseLose">You Lose !</string>
+    <string name="quit">Quit</string>
+    <string name="nom">Enter your name</string>
+    <string name="titre">Score</string>
+    <string name="message">message</string>
+    <string name="quitter">quitter</string>
+    <string name="save">save</string>
+    <string name="continuerlapartie">Do you want to continue your previous game ?</string>
+    <string name="nouvellepartie">New Game</string>
+    <string name="continu">Continue</string>
+    <string name="Modeexperimentale">Testmode</string>
+    <string name="tempslimite">limited time</string>
+</resources>

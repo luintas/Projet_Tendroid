@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Just Get 10</string>
+    <string name="play">Jouer</string>
+    <string name="reset">Recommencer</string>
+    <string name="color">Couleurs</string>
+    <string name="phrasewin">Tu as gagné !</string>
+    <string name="phraseLose">Tu as perdu !</string>
+    <string name="darkmode">Mode sombre</string>
+    <string name="Pref">Preferences</string>
+    <string name="quit">Quitter</string>
+    <string name="nom">Veuillez entrer votre nom</string>
+    <string name="nouvellepartie">Nouvelle Partie</string>
+    <string name="continuerlapartie">Voulez vous continuer la partie ?</string>
+    <string name="continu">Continuer</string>
+    <string name="quitter">Quitter</string>
+    <string name="titre">Score</string>
+    <string name="save">Sauvegarder</string>
+    <string name="tempslimite">Temps limite</string>
+    <string name="Modeexperimentale">Mode experimentale</string>
+</resources>

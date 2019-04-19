@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reset">Kòmanse ankò</string>
+    <string name="play">Jwe</string>
+    <string name="Pref">Preferans</string>
+    <string name="color">Koulè</string>
+    <string name="darkmode">Mòd nwa</string>
+    <string name="phrasewin">Ou te genyen</string>
+    <string name="phraseLose">Ou pèdi</string>
+    <string name="quit">Kitè</string>
+    <string name="nom">Ekri non ou</string>
+    <string name="titre">Nòt</string>
+    <string name="continuerlapartie">ou vle kontinye pati anvan</string>
+    <string name="nouvellepartie">Nouvo Pati</string>
+    <string name="continu">Kontinye</string>
+    <string name="quitter">Kitè</string>
+    <string name="save">Sove</string>
+    <string name="tempslimite">Limit tan</string>
+    <string name="Modeexperimentale">Mòd eksperimantal</string>
+</resources>

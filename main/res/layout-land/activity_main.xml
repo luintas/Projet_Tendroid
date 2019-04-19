@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#FFFFFF"
+    android:id="@+id/layout1">
+
+    <ImageButton
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_action_playback_play_white"
+        android:text="JOUER"
+        android:onClick="afficheLePlateau"
+
+        android:background="@drawable/button_shape"
+        android:paddingVertical="50dp"
+        android:paddingHorizontal="70dp"/>
+    <ImageButton
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_action_settings"
+        android:onClick="afficherPref"/>
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_action_achievement"
+        android:onClick="afficherLesScores"/>
+
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_action_exit"
+        android:onClick="quitter"/>
+
+
+
+</LinearLayout>

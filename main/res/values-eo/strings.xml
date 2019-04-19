@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Prenanta 10</string>
+    <string name="play">Ludi</string>
+    <string name="reset">komenci denove</string>
+    <string name="Pref">preferoj</string>
+    <string name="darkmode">sombe-reĝimo</string>
+    <string name="color">koloroj</string>
+    <string name="phrasewin">Vi gajnis</string>
+    <string name="phraseLose">Vi perdis</string>
+    <string name="quit">Lasi</string>
+    <string name="nom">Enigu vian nomon</string>
+    <string name="titre">partituro</string>
+    <string name="quitter">Lasi</string>
+    <string name="continuerlapartie">Ĉu vi volas daŭrigi la ludon?</string>
+    <string name="nouvellepartie">Nova parto</string>
+    <string name="continu">daŭrigi</string>
+    <string name="save">ŝpari</string>
+    <string name="tempslimite">Tempo limo</string>
+    <string name="Modeexperimentale">Eksperimenta reĝimo</string>
+</resources>
